@@ -19,9 +19,10 @@ He plans on using these insights to help him decide whether he should expand the
 ***
 
 ## ✅Datasets
-[sales](data_folder/data.csv)</p>
-[menu](data_folder/data.csv)</p>
-[members](data_folder/data.csv)</p>
+<p> <a href = "https://github.com/Aurelia872/Datasets/blob/main/sales.csv">Sales</a></p>
+<p> <a href = "https://github.com/Aurelia872/Datasets/blob/main/menu.csv">Menu</a></p>
+<p> <a href = "https://github.com/Aurelia872/Datasets/blob/main/members.csv">Members</a></p>
+<p> <a href = "https://github.com/Aurelia872/Datasets/blob/main/customer.csv">Customer</a></p>
 
 ***
 
