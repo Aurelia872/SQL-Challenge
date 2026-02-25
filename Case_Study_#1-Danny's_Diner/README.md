@@ -1,7 +1,9 @@
 # &#127869; Case Study #1 - Danny's Diner 
 [by Danny Ma . May 1, 2021](https://8weeksqlchallenge.com/case-study-1/)
 
-<img src="https://user-images.githubusercontent.com/81607668/127727503-9d9e7a25-93cb-4f95-8bd0-20b87cb4b459.png" alt="Image" width="500" height="520">
+<img src="https://8weeksqlchallenge.com/images/case-study-designs/1.png" alt="Image" width="500" height="520">
+
+https://8weeksqlchallenge.com/images/case-study-designs/1.png
 
 ***
 
