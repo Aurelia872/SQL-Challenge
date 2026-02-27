@@ -1,4 +1,4 @@
-# Case Study #2 - Pizza Runner
+# 🍕Case Study #2 - Pizza Runner
 [by Danny Ma . May 4, 2021](https://8weeksqlchallenge.com/case-study-2/)
 
 <img src="https://8weeksqlchallenge.com/images/case-study-designs/2.png" alt="Image" width="500" height="520">
