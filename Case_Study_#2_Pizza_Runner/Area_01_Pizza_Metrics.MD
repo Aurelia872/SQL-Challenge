@@ -1,7 +1,7 @@
 # 🍽🍕🍕🍕
 ###  This area consists of 10 questions;
-
-<li>[01.How many pizzas were ordered?](#q1)</li>
+<ol>
+<li><a href="q1">01.How many pizzas were ordered?</a></li>
 <li>[02.How many unique customer orders were made?](#q2)</li>
 <li>[03.How many successful orders were delivered by each runner?](#q3)</li>
 <li>[04.How many of each type of pizza was delivered?](#q4)</li>
@@ -11,11 +11,11 @@
 <li>[08.How many pizzas were delivered that had both exclusions and extras?](#q8)</li>
 <li>[09.What was the total volume of pizzas ordered for each hour of the day?](#q9)</li>
 <li>[10.What was the volume of orders for each day of the week?](#q10)</li>
+</ol>
 
 
 ***
-<a name="q1"></a>
-## 01.How many pizzas were ordered?
+<h2 id="q1">01.How many pizzas were ordered?</h2>
 The data set to be used for this question is customer_orders, but it has inconsistencies in data, so the data set is cleaned first. Please find the queries for data cleaning andstandardizing here. 
 
 
