@@ -1,9 +1,9 @@
 # 🍽🍕🍕🍕
 ###  This area consists of 10 questions;
-
-[How many pizzas were ordered?] (#q1)
-[How many unique customer orders were made?](#q2)
 <ol>
+[How many pizzas were ordered?](#q1)
+[How many unique customer orders were made?](#q2)
+
 <li>How many successful orders were delivered by each runner?</li>
 <li>How many of each type of pizza was delivered?</li>
 <li>How many Vegetarian and Meatlovers were ordered by each customer?</li>
