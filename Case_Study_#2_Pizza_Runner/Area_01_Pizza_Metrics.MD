@@ -253,3 +253,60 @@ group by c.order_id,c.customer_id;
 - Only 1 order has been delivered with both exclusions and extras.
 
 ***
+
+#09.What was the total volume of pizzas ordered for each hour of the day?
+
+#### SQL Query
+
+````sql
+select
+extract(hour from order_time) as `hour`, count(order_id) as order_volume
+from
+customer_orders
+group by `hour`
+order by `hour`;
+````
+
+<ol>
+  <p> -> EXTRACT statement has been used to obtain the hour from the order_time column with the time stamp.</p>
+  <p> -> The orders are then counted and grouped by the hour to show the hourly volume of pizza orders</p>
+  
+</ol>
+
+#### Answer:
+
+<img width="206" height="132" alt="Image" src="https://github.com/user-attachments/assets/12fa45ce-0942-4efc-9001-969cb65ef101" />
+
+- There is a spike in pizza orders in the afternoon at 1PM, and evening times at 6PM, 9PM and 11PM
+
+***
+
+#10.What was the volume of orders for each day of the week?
+
+#### SQL Query
+
+````sql
+
+select
+dayname(order_time) as `day`,
+count(order_id) as order_volume
+from customer_orders
+group by `day`;
+
+````
+
+<ol>
+  <p> -> DAYNAME query has been used to display the day of the week.</p>
+  <p> -> Then the orders are counted and grouped by the day to show the volume of pizza orders by the day of the week </p>
+  
+</ol>
+
+#### Answer:
+
+<img width="191" height="95" alt="Image" src="https://github.com/user-attachments/assets/12de77cf-9764-4d16-8192-785139d3505b" />
+
+- Wednesday and Saturday have had the most volume with 5 orders each on those days while there has been 3 orders placed on Thursday and 1 order on Friday.
+- No orders found on Monday, Tuesday, Thursday and Sunday.
+
+***
+
