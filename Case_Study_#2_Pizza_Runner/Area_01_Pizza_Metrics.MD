@@ -1,17 +1,16 @@
 # 🍽🍕🍕🍕
 ###  This area consists of 10 questions;
-<ol>
-[How many pizzas were ordered?](#q1)
-[How many unique customer orders were made?](#q2)
 
-<li>How many successful orders were delivered by each runner?</li>
-<li>How many of each type of pizza was delivered?</li>
-<li>How many Vegetarian and Meatlovers were ordered by each customer?</li>
-<li>What was the maximum number of pizzas delivered in a single order?</li>
-<li>For each customer, how many delivered pizzas had at least 1 change and how many had no changes?</li>
-<li>How many pizzas were delivered that had both exclusions and extras?</li>
-<li>What was the total volume of pizzas ordered for each hour of the day?</li>
-<li>What was the volume of orders for each day of the week?</li>
+[01.How many pizzas were ordered?](#q1)
+[02.How many unique customer orders were made?](#q2)
+[03.How many successful orders were delivered by each runner?](#q3)
+[04.How many of each type of pizza was delivered?](#q4)
+[05.How many Vegetarian and Meatlovers were ordered by each customer?](#q5)
+[06.What was the maximum number of pizzas delivered in a single order?](#q6)
+[07.For each customer, how many delivered pizzas had at least 1 change and how many had no changes?](#q7)
+[08.How many pizzas were delivered that had both exclusions and extras?](#q8)
+[09.What was the total volume of pizzas ordered for each hour of the day?](#q9)
+[10.What was the volume of orders for each day of the week?](#q10)
 </ol>
 
 ***
