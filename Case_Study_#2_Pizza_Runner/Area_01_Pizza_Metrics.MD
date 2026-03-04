@@ -205,7 +205,7 @@ order by customer_id;
   <p> ->*I approached the query by breaking it into 3 parts (delivered,change,no change) and combining them all together*</p>
   <p> ->This query uses a combination of CTE, subquery, case function and other group by and order by functions to find the desired result. </p>
   <p> ->The CTE is used to filter out only the delivered pizzas</p>
-  <p> ->a CASE function is used within a subquery to flag orders that have a change or no change</p>
+  <p> ->a CASE function is used within a subquery to flag orders that have a change (includes extras or exclusions) or no change (does not include extras and exclusions) </p>
   <p> ->Finally the results are grouped by the flags to show how many changes per customer
   
  </ol>
@@ -214,11 +214,42 @@ order by customer_id;
 
 <img width="238" height="134" alt="Image" src="https://github.com/user-attachments/assets/612c60ae-5e8c-4607-baaa-15df93dd4209" />
 
-- As queried previously we know that there were 12 successfully delivered out of 14 total orders. Out of which;
-- Customer no.101 placed 2 orders with no change. (1 order was not delivered and hence not queried)
-- Customer no.102 placed 3 orders with no change.
-- Customer no.103 placed 3 orders with change.
-- Customer no.104 ordered 3 "Meatlovers" pizzas 
-- Cus
+- Customer no.101 received 2 pizzas with no change.
+- Customer no.102 received 3 pizzas with no change.
+- Customer no.103 received 3 pizzas, all with some change.
+- Customer no.104 received 2 pizzas with no change and 1 pizza with some change.
+- Customer no.105 received 1 pizza with some change
+
+***
+
+#08.How many pizzas were delivered that had both exclusions and extras?
+
+#### SQL Query
+
+````sql
+select c.customer_id,c.order_id, count(*) as delivered_orders_with_exclusions_and_extras
+from 
+runner_orders r
+join 
+customer_orders c
+on r.order_id = c.order_id
+where r.cancellation is null
+and 
+c.exclusions is not null
+and c.extras is not null
+group by c.order_id,c.customer_id;
+````
+
+<ol>
+  <p> -> JOIN statement is used to combine runner_orders and customer_orders tables to include the "delivered" factor.</p>
+  <p> -> WHERE clause is used with AND clause to filter the pizzas with both changes </p>
+  
+</ol>
+
+#### Answer:
+
+<img width="423" height="69" alt="Image" src="https://github.com/user-attachments/assets/2b3cb8fa-9514-4e0c-afaa-3197b01c6952" />
+
+- Only 1 order has been delivered with both exclusions and extras.
 
 ***
