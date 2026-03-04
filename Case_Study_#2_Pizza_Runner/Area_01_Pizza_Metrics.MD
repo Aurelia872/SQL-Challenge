@@ -1,5 +1,5 @@
-🍽🍕🍕🍕
-###  This area consiste of 10 questions;
+# 🍽🍕🍕🍕
+###  This area consists of 10 questions;
 <ol>
 <li>How many pizzas were ordered?</li>
 <li>How many unique customer orders were made?</li>
