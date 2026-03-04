@@ -1,23 +1,23 @@
 # 🍽🍕🍕🍕
 ###  This area consists of 10 questions;
 
-[01.How many pizzas were ordered?](#q1)
-[02.How many unique customer orders were made?](#q2)
-[03.How many successful orders were delivered by each runner?](#q3)
-[04.How many of each type of pizza was delivered?](#q4)
-[05.How many Vegetarian and Meatlovers were ordered by each customer?](#q5)
-[06.What was the maximum number of pizzas delivered in a single order?](#q6)
-[07.For each customer, how many delivered pizzas had at least 1 change and how many had no changes?](#q7)
-[08.How many pizzas were delivered that had both exclusions and extras?](#q8)
-[09.What was the total volume of pizzas ordered for each hour of the day?](#q9)
-[10.What was the volume of orders for each day of the week?](#q10)
-</ol>
+<li>[01.How many pizzas were ordered?](#q1)</li>
+<li>[02.How many unique customer orders were made?](#q2)</li>
+<li>[03.How many successful orders were delivered by each runner?](#q3)</li>
+<li>[04.How many of each type of pizza was delivered?](#q4)</li>
+<li>[05.How many Vegetarian and Meatlovers were ordered by each customer?](#q5)</li>
+<li>[06.What was the maximum number of pizzas delivered in a single order?](#q6)</li>
+<li>[07.For each customer, how many delivered pizzas had at least 1 change and how many had no changes?](#q7)</li>
+<li>[08.How many pizzas were delivered that had both exclusions and extras?](#q8)</li>
+<li>[09.What was the total volume of pizzas ordered for each hour of the day?](#q9)</li>
+<li>[10.What was the volume of orders for each day of the week?](#q10)</li>
+
 
 ***
-<a name="q1">
+<a name="q1"></a>
 ## 01.How many pizzas were ordered?
 The data set to be used for this question is customer_orders, but it has inconsistencies in data, so the data set is cleaned first. Please find the queries for data cleaning andstandardizing here. 
-</a>
+
 
 #### SQL Query
 
@@ -57,7 +57,7 @@ from customer_orders;
 - A total of 10 unique orders were made 
 
 ***
-
+<a name="q3"></a>
 ## 03.How many successful orders were delivered by each runner?
 
 #### SQL Query
@@ -80,7 +80,7 @@ where cancellation is null;
 - There a total of 8 successful orders 
 
 ***
-
+<a name="q4"></a>
 ## 04.How many of each type of pizza was delivered?
 
 #### SQL Query
@@ -110,7 +110,7 @@ group by n.pizza_id;
 - 3 "Vegetarian" pizzas were delivered
 
 ***
-
+<a name="q5"></a>
 ## 05.How many Vegetarian and Meatlovers were ordered by each customer?
 
 #### SQL Query
@@ -141,7 +141,7 @@ order by c.customer_id;
 - Customer no.105 ordered 1 "Vegetarian" pizza
 
 ***
-
+<a name="q6"></a>
 ## 06.What was the maximum number of pizzas delivered in a single order?
 
 #### SQL Query
@@ -176,7 +176,7 @@ limit 1;
 - The maximum number of pizzas delivered in a single order is 3.
 
 ***
-
+<a name="q7"></a>
 ## 07.For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
 
 #### SQL Query
@@ -223,7 +223,7 @@ order by customer_id;
 - Customer no.105 received 1 pizza with some change
 
 ***
-
+<a name="q8"></a>
 ## 08.How many pizzas were delivered that had both exclusions and extras?
 
 #### SQL Query
@@ -255,7 +255,7 @@ group by c.order_id,c.customer_id;
 - Only 1 order has been delivered with both exclusions and extras.
 
 ***
-
+<a name="q9"></a>
 ## 09.What was the total volume of pizzas ordered for each hour of the day?
 
 #### SQL Query
@@ -282,7 +282,7 @@ order by `hour`;
 - There is a spike in pizza orders in the afternoon at 1PM, and evening times at 6PM, 9PM and 11PM
 
 ***
-
+<a name="q10"></a>
 ## 10.What was the volume of orders for each day of the week?
 
 #### SQL Query
