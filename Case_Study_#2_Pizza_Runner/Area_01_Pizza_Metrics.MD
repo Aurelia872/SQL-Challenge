@@ -1,8 +1,8 @@
 # 🍽🍕🍕🍕
 ###  This area consists of 10 questions;
 <ol>
-<li>How many pizzas were ordered?</li>
-<li>How many unique customer orders were made?</li>
+<li>[How many pizzas were ordered?](#q1)</li>
+<li>[How many unique customer orders were made?](#q2)</li>
 <li>How many successful orders were delivered by each runner?</li>
 <li>How many of each type of pizza was delivered?</li>
 <li>How many Vegetarian and Meatlovers were ordered by each customer?</li>
@@ -14,7 +14,7 @@
 </ol>
 
 ***
-
+<a name="q1"></a>
 ## 01.How many pizzas were ordered?
 The data set to be used for this question is customer_orders, but it has inconsistencies in data, so the data set is cleaned first. Please find the queries for data cleaning andstandardizing here. 
 
@@ -35,7 +35,7 @@ from customer_orders;
 - A total of 14 pizzas were ordered
 
 ***
-
+<a name="q2"></a>
 ## 02.How many unique customer orders were made?
 
 #### SQL Query
