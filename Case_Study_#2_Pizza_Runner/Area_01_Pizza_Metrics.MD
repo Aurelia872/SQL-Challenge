@@ -1,8 +1,8 @@
 # 🍽🍕🍕🍕
 ###  This area consists of 10 questions;
 <ol>
-<li><a href="q1">01.How many pizzas were ordered?</a></li>
-<li>[02.How many unique customer orders were made?](#q2)</li>
+<li><a href="#q1">01.How many pizzas were ordered?</a></li>
+<li><a href="#q2">02.How many unique customer orders were made?</a></li>
 <li>[03.How many successful orders were delivered by each runner?](#q3)</li>
 <li>[04.How many of each type of pizza was delivered?](#q4)</li>
 <li>[05.How many Vegetarian and Meatlovers were ordered by each customer?](#q5)</li>
@@ -36,8 +36,8 @@ from customer_orders;
 - A total of 14 pizzas were ordered
 
 ***
-<a name="q2"></a>
-## 02.How many unique customer orders were made?
+
+<h2 id="q2">02.How many unique customer orders were made?</h2>
 
 #### SQL Query
 
