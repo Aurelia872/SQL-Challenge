@@ -16,3 +16,4 @@ This area consiste of 10 questions;
 
 #01.How many pizzas were ordered?
 The data set to be used for this question is customer_orders, but it has inconsistencies in data, so the data set is cleaned first. 
+
