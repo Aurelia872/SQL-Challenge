@@ -1,4 +1,5 @@
-This area consiste of 10 questions;
+🍽🍕🍕🍕
+###  This area consiste of 10 questions;
 <ol>
 <li>How many pizzas were ordered?</li>
 <li>How many unique customer orders were made?</li>
@@ -14,7 +15,7 @@ This area consiste of 10 questions;
 
 ***
 
-# 01.How many pizzas were ordered?
+## 01.How many pizzas were ordered?
 The data set to be used for this question is customer_orders, but it has inconsistencies in data, so the data set is cleaned first. Please find the queries for data cleaning andstandardizing here. 
 
 #### SQL Query
@@ -35,7 +36,7 @@ from customer_orders;
 
 ***
 
-#02.How many unique customer orders were made?
+## 02.How many unique customer orders were made?
 
 #### SQL Query
 
@@ -56,7 +57,7 @@ from customer_orders;
 
 ***
 
-#03.How many successful orders were delivered by each runner?
+## 03.How many successful orders were delivered by each runner?
 
 #### SQL Query
 
@@ -79,7 +80,7 @@ where cancellation is null;
 
 ***
 
-#04.How many of each type of pizza was delivered?
+## 04.How many of each type of pizza was delivered?
 
 #### SQL Query
 
@@ -109,7 +110,7 @@ group by n.pizza_id;
 
 ***
 
-#05.How many Vegetarian and Meatlovers were ordered by each customer?
+## 05.How many Vegetarian and Meatlovers were ordered by each customer?
 
 #### SQL Query
 
@@ -140,7 +141,7 @@ order by c.customer_id;
 
 ***
 
-#06.What was the maximum number of pizzas delivered in a single order?
+## 06.What was the maximum number of pizzas delivered in a single order?
 
 #### SQL Query
 
@@ -175,7 +176,7 @@ limit 1;
 
 ***
 
-#07.For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
+## 07.For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
 
 #### SQL Query
 
@@ -222,7 +223,7 @@ order by customer_id;
 
 ***
 
-#08.How many pizzas were delivered that had both exclusions and extras?
+## 08.How many pizzas were delivered that had both exclusions and extras?
 
 #### SQL Query
 
@@ -254,7 +255,7 @@ group by c.order_id,c.customer_id;
 
 ***
 
-#09.What was the total volume of pizzas ordered for each hour of the day?
+## 09.What was the total volume of pizzas ordered for each hour of the day?
 
 #### SQL Query
 
@@ -281,7 +282,7 @@ order by `hour`;
 
 ***
 
-#10.What was the volume of orders for each day of the week?
+## 10.What was the volume of orders for each day of the week?
 
 #### SQL Query
 
